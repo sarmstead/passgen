@@ -8,3 +8,5 @@ const createPassword = (length = 8, hasNumbers = true, hasSymbols = true) => {
     hasSymbols ? (chars += symbols) : '';
     return chars;
 }
+
+module.exports = createPassword;
