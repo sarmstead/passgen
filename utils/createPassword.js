@@ -6,4 +6,5 @@ const createPassword = (length = 8, hasNumbers = true, hasSymbols = true) => {
     let chars = alpha;
     hasNumbers ? (chars += numbers) : '';
     hasSymbols ? (chars += symbols) : '';
+    return chars;
 }
