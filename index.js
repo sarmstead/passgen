@@ -13,9 +13,8 @@ program
 
 const {length, save, numbers, symbols} = program.opts();
 
-// Get and log generated password
+// Get generated password
 const generatedPassword = createPassword(length, numbers, symbols);
-console.log(generatedPassword);
 
 // Copy to clipboard
 clipboardy.writeSync(generatedPassword);
