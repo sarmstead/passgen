@@ -3,7 +3,11 @@ const numbers = '0123456789';
 const symbols = `!@#$%^&*()_+=-{}][":;'?><,.~]`;
 
 const generatedPassword = (length, chars) => {
-    
+    let password = '';
+    for (i = 0; i < length; i++) {
+        password += chars.charAt(Math.floor(Math.random() * chars.length))
+    }
+    return password;
 }
 
 const createPassword = (length = 8, hasNumbers = true, hasSymbols = true) => {
