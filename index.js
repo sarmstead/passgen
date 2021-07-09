@@ -10,3 +10,7 @@ program
     .parse();
 
 const {length, save, numbers, symbols} = program.opts();
+
+// Get and log generated password
+const generatedPassword = createPassword(length, numbers, symbols);
+console.log(generatedPassword);
