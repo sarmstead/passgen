@@ -24,4 +24,4 @@ const generatedPassword = createPassword(length, numbers, symbols);
 clipboardy.writeSync(generatedPassword);
 
 // Inform user about copied password
-console.log(chalk.green('Success! Your password is copied to your clipboard.'))
+console.log(chalk.green('Success! Your password is copied to your clipboard.'));
