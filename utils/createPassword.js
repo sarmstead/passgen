@@ -1,7 +1,16 @@
+const emoji = require('node-emoji');
+let emojiArray = [];
+const randomEmojis = (length) => {
+    for (i = 0; i < length; i++) {
+        emojiArray.push(emoji.random()['emoji']);
+    }
+    return emojiArray;
+}
+
 const alpha = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const numbers = '0123456789';
 const symbols = `!@#$%^&*()_+=-{}][":;'?><,.~]`;
-const emojis = '😀😃😁😆😅🤣😂🙂🙃😉😊😇🥰😍🤩😘😗😚😙🥲😋😛😜🤪😝🤑🤗🤭🤫🤔🤐🤨😐😑😶😶‍🌫️😏😒🙄😬😮‍💨🤥';
+
 
 const generatePassword = (length, chars) => {
     let password = '';
@@ -20,3 +29,5 @@ const createPassword = (length = 130, hasNumbers = true, hasSymbols = true, hasE
 }
 
 module.exports = createPassword;
+
+console.log(randomEmojis(5));
