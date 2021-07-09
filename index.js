@@ -12,6 +12,7 @@ program
     .option('-s, --save', 'save password to passwords.txt')
     .option('-nn, --no-numbers', 'remove numbers') // The number option is true by default
     .option('-ns, --no-symbols', 'remove symbols') // The symbol option is true by default
+    // .option('-ne, --no-emojis', 'remove emojis') // The emoji option is true by default
     .parse();
 
 const {length, save, numbers, symbols} = program.opts();
