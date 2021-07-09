@@ -9,4 +9,4 @@ program
     .option('-ns, --no-symbols', 'remove symbols') // The symbol option is true by default
     .parse();
 
-console.log(program.opts());
+const {length, save, numbers, symbols} = program.opts();
